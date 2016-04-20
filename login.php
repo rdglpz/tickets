@@ -35,7 +35,6 @@ if ((isset($_SESSION['flag']))) {
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   </head>
-
 <body>
     <h1 class="form-signin-heading">Reportes de Incidentes<br> Institucional</h1>
     <div class="container">

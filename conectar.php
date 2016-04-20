@@ -26,9 +26,11 @@ if ($fila = $result->fetch_assoc()) {
 		echo "Usuario Valido, redireccionar...";
             $_SESSION['mysqli'] = $mysqli;
         	$_SESSION['id'] = $fila['idusuarios'];
+        //echo $_SESSION['id'];
         	$_SESSION['mysqli'] = $mysqli;
-            $query = "SELECT TABLE_NAME FROM information_schema.tables WHERE table_schema='umichccu_sistemaIncidentes'";
-            $query = "describe dependencias";
+         //   $query = "SELECT TABLE_NAME FROM information_schema.tables WHERE table_schema='umichccu_sistemaIncidentes'";
+        //    $query = "describe dependencias";
+            header('Location: main.php');
           //  $ses_sql = mysqli_query($mysqli,$query);
             //    while($row=mysqli_fetch_array($ses_sql,MYSQLI_ASSOC)) {
                      //echo $row['TABLE_NAME'];
@@ -45,7 +47,7 @@ if ($fila = $result->fetch_assoc()) {
         //    while($table = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC)) { // go through each row that was returned in $result
           //      echo $table[1];    // print the table that was returned on that row.
         //    }
-   	        header('Location: index.php');
+   	     //   
     	}
 }else{
 	header('Location: login.php');
