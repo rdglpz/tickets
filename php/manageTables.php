@@ -1,10 +1,10 @@
-<?
+<?php
+
 class manageTables{
     protected $mysqlConnection;
     protected $view;
     
-    
-     function __construct($db){
+    function __construct($db){
         $view = array();
         $mysqlConnection = $db;
          
@@ -36,10 +36,6 @@ class manageTables{
         }
         
     }
-    
-    
-    
-    
-    
 }
+
 ?>
